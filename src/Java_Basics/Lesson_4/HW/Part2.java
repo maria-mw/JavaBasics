@@ -1,5 +1,6 @@
 package Java_Basics.Lesson_4.HW;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Part2 {
@@ -8,7 +9,7 @@ public class Part2 {
         // 1. True if array is sorted by increasing
 //        Integer [] array1 = {1,3,5};
         Integer[] array1 = arrayCreation(10);
-        printArray(array1);
+        System.out.println(Arrays.toString(array1));
         int i = 0;
         boolean increasingSorted = false;
         while (i < array1.length - 1) {
@@ -34,7 +35,7 @@ public class Part2 {
                 System.out.print("Enter number #" + (j + 1) + ": ");
                 array2[j] = scanner.nextInt();
             }
-            printArray(array2);
+            System.out.println(Arrays.toString(array2));
         } catch (Exception e) {
             System.out.println("Array length should be positive number");
         }
@@ -44,12 +45,12 @@ public class Part2 {
 //        Integer [] array3 = {2,2,9,3,9,2,2,4,3};
         Integer[] array3 = arrayCreation(10);
         System.out.println("Original array");
-        printArray(array3);
+        System.out.println(Arrays.toString(array3));
         Integer firstElement = array3[0];
         array3[0] = array3[array3.length - 1];
         array3[array3.length - 1] = firstElement;
         System.out.println("First and last elements of array are replaced");
-        printArray(array3);
+        System.out.println(Arrays.toString(array3));
         System.out.println("========================================================================");
 
         // 4. First unique number at the array
@@ -57,7 +58,7 @@ public class Part2 {
 ////        Integer [] array4 = {2,2,9,3,9,2,2,4,3};
         Integer[] array4 = arrayCreation(10);
         System.out.println("Original array");
-        printArray(array4);
+        System.out.println(Arrays.toString(array4));
         Integer uniqueNumber = null;
 
         boolean flag;
@@ -91,10 +92,10 @@ public class Part2 {
         Integer[] array5 = arrayCreation(10);
 //        Integer[] array5 = {3, 9, 8, 5, 3, 4, 6};
         System.out.println("Original array");
-        printArray(array5);
+        System.out.println(Arrays.toString(array5));
         mergeSort(array5, 0, array5.length);
         System.out.println("Sorted array");
-        printArray(array5);
+        System.out.println(Arrays.toString(array5));
         System.out.println("========================================================================");
     }
 
@@ -132,13 +133,4 @@ public class Part2 {
         }
         return array;
     }
-
-    public static void printArray(Integer[] array) {
-        System.out.print("[");
-        for (Integer element : array) {
-            System.out.print(" " + element);
-        }
-        System.out.println(" ]");
-    }
-
 }

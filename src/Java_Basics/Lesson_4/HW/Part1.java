@@ -1,5 +1,6 @@
 package Java_Basics.Lesson_4.HW;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Part1 {
@@ -75,7 +76,7 @@ public class Part1 {
 
         //5. True if first or last element of array is equal 3
         Integer[] array = Part2.arrayCreation(10);
-        Part2.printArray(array);
+        System.out.println(Arrays.toString(array));
         if (array[0] == 3) {
             System.out.println("True. First element of array is equal 3");
         } else if (array[array.length - 1] == 3) {
@@ -88,7 +89,7 @@ public class Part1 {
         //6. True if the array contains 1 or 3
         Integer[] myArray = Part2.arrayCreation(10);
         boolean flag = false;
-        Part2.printArray(myArray);
+        System.out.println(Arrays.toString(myArray));
         for (Integer number : myArray) {
             if ((number == 1) || (number == 3)) {
                 System.out.println("True. Array contains numbers 1 or 3");
