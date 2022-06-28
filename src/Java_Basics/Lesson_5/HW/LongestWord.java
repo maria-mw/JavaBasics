@@ -32,7 +32,7 @@ public class LongestWord {
             }
         }
 
-        System.out.println("The longest word at the text is '"+ longestWord + "'");
+        System.out.println("The longest word at the text is '" + longestWord + "'");
 //        scanner.close();
-}
+    }
 }

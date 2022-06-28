@@ -5,7 +5,7 @@ public class Palindrome {
     public static void main(String[] args) {
         //2. Palindrome
         System.out.println("Palindrome: ");
-        String word = "saippuakivikauppias";
+        String word = "saippuakivikauppias"; //торговец щелоком (фин)
         System.out.println(word);
         Boolean isPalindrome = false;
         for (int i = 0, j = word.length() - 1; i < word.length() / 2; i++, j--) {
