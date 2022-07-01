@@ -1,29 +1,31 @@
 package Java_Basics.Lesson_6.HW;
 
 public class Bird extends Animal  {
-    private Integer wings;
+    private Boolean wings;
 
-    public Bird(String name, Integer legs) {
+    public Bird(String name, Integer legs, Boolean wings) {
         super(name, legs);
+        this.wings = wings;
     }
 
-    public Integer getWings() {
+    public Boolean getWings() {
         return wings;
     }
 
-    private void setWings(Integer wings) {
+    private void setWings(Boolean wings) {
         this.wings = wings;
     }
+
 
     @Override
     public String toString() {
         return "Bird: " +
-                " name = " + getName() +
-                ", legs = " + getLegs() +
-                " wings = " + getWings();
+                " name = " + super.getName() +
+                ", legs = " + super.getLegs() +
+                ", wings = " + getWings();
     }
 
     public void printLegs(){
-        System.out.println(super.getLegs());
+        System.out.println("Bird '" + getName() + "' have " + super.getLegs() + " legs");
     }
 }

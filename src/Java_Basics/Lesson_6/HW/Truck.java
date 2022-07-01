@@ -1,10 +1,10 @@
 package Java_Basics.Lesson_6.HW;
 
 public class Truck extends Car {
-    public int wheelsNumber;
-    public double maxWeight;
+    private Integer wheelsNumber;
+    private Integer maxWeight;
 
-    public Truck(int weight, String model, char color, float speed, int wheelsNumber, double maxWeight) {
+    public Truck(Integer weight, String model, Character color, Float speed, Integer wheelsNumber, Integer maxWeight) {
         super(weight, model, color, speed);
         this.wheelsNumber = wheelsNumber;
         this.maxWeight = maxWeight;
@@ -14,7 +14,7 @@ public class Truck extends Car {
         return wheelsNumber;
     }
 
-    private void setWheelsNumber(int wheelsNumber) {
+    private void setWheelsNumber(Integer wheelsNumber) {
         this.wheelsNumber = wheelsNumber;
     }
 
@@ -22,23 +22,31 @@ public class Truck extends Car {
         return maxWeight;
     }
 
-    private void setMaxWeight(double maxWeight) {
+    private void setMaxWeight(Integer maxWeight) {
         this.maxWeight = maxWeight;
     }
 
     @Override
     public String toString() {
         return "Truck :" +
-                " model = " + model +
-                ", weight = " + weight +
-                ", color = " + color +
-                ", speed = " + speed +
+                " model = " + getModel() +
+                ", weight = " + getWeight() +
+                ", color = " + getColor() +
+                ", speed = " + getSpeed() +
                 ",wheelsNumber = " + wheelsNumber +
                 ", maxWeight = " + maxWeight;
     }
 
-    public void newWheels(int wheelsNumber) {
+    public void newWheels(Integer wheelsNumber) {
         setWheelsNumber(wheelsNumber);
         System.out.println(wheelsNumber);
+    }
+
+    @Override
+    public void outPut() {
+        System.out.println("Вес " + getModel() + " составляет " + getWeight() + " кг.");
+        System.out.println("Цвет грузовика - " + getColor() + " и его скорость - " + getSpeed() + " км/ч");
+        System.out.println("Число колес у грузовика " + wheelsNumber);
+        System.out.println("Максимальный вес - " + maxWeight + " кг");
     }
 }

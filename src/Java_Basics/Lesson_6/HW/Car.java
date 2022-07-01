@@ -1,12 +1,12 @@
 package Java_Basics.Lesson_6.HW;
 
 public class Car {
-    public int weight;
-    public String model;
-    public char color;
-    public float speed;
+    private Integer weight;
+    private String model;
+    private Character color;
+    private Float speed;
 
-    public Car(int weight, String model, char color, float speed) {
+    public Car(Integer weight, String model, Character color, Float speed) {
         this.weight = weight;
         this.model = model;
         this.color = color;
@@ -17,15 +17,15 @@ public class Car {
     }
 
     public void outPut() {
-        System.out.println("Вес " + model + " состовляет " + weight + " кг.");
-        System.out.println("Цвет машины - " + color + " и ее скорость - " + speed);
+        System.out.println("Вес " + model + " составляет " + weight + " кг.");
+        System.out.println("Цвет машины - " + color + " и ее скорость - " + speed + " км/ч");
     }
 
     public int getWeight() {
         return weight;
     }
 
-    private void setWeight(int weight) {
+    private void setWeight(Integer weight) {
         this.weight = weight;
     }
 
@@ -41,7 +41,7 @@ public class Car {
         return color;
     }
 
-    private void setColor(char color) {
+    private void setColor(Character color) {
         this.color = color;
     }
 
@@ -49,7 +49,7 @@ public class Car {
         return speed;
     }
 
-    private void setSpeed(float speed) {
+    private void setSpeed(Float speed) {
         this.speed = speed;
     }
 
