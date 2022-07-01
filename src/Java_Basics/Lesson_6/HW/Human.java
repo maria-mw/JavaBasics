@@ -27,7 +27,7 @@ public abstract class Human implements PrintingInfo {
 
     @Override
     public String toString() {
-        return "Human: " +
+        return "Human : " +
                 "name = " + name +
                 ", surname = " + surname;
     }
