@@ -18,8 +18,8 @@ public class Client extends Human implements PrintingInfo {
 
     @Override
     public String toString() {
-        return "Client: " +
-                "name = " + super.getName() +
+        return "Client:" +
+                " name = " + super.getName() +
                 ", surname = " + super.getSurname() +
                 ", bankName = " + getBankName();
     }

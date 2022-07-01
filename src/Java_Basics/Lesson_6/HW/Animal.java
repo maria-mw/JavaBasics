@@ -27,7 +27,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal :" +
+        return "Animal:" +
                 " name = " + name +
                 ", legs= " + legs;
     }

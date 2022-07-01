@@ -18,7 +18,7 @@ public class BankEmployee extends Human implements PrintingInfo{
 
     @Override
     public String toString() {
-        return "BankEmployee : " +
+        return "BankEmployee: " +
                 "name = " + getName() +
                 ", surname = " + getSurname() +
                 ", bankName = " + getBankName();

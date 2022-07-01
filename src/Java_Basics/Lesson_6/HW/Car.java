@@ -55,7 +55,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car : " +
+        return "Car:" +
                 " model = " + model +
                 ", weight = " + weight +
                 ", color = " + color +

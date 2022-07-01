@@ -87,7 +87,7 @@ public class User {
         if (age < 0 || age > 125) {
             age = 0;
         }
-        System.out.println("Please, enter gender: for male  / female");
+        System.out.println("Please, enter gender:");
         System.out.println("For male put - m;\nfor female - f");
 
         Gender gender = null;
@@ -118,7 +118,7 @@ public class User {
         if (age < 0 || age > 125) {
             age = 0;
         }
-        System.out.println("Please, enter gender: for male  / female");
+        System.out.println("Please, enter gender:");
         System.out.println("For male put - m;\nfor female - f");
 
         Gender gender = null;

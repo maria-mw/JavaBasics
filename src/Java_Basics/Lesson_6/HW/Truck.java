@@ -28,8 +28,8 @@ public class Truck extends Car {
 
     @Override
     public String toString() {
-        return "Truck :" +
-                " model = " + getModel() +
+        return "Truck: " +
+                "model = " + getModel() +
                 ", weight = " + getWeight() +
                 ", color = " + getColor() +
                 ", speed = " + getSpeed() +

@@ -41,8 +41,8 @@ public class Junior extends User {
 
     @Override
     public String toString() {
-        return "Junior:" +
-                " name = '" + getName() + '\'' +
+        return "Junior: " +
+                "name = '" + getName() + '\'' +
                 ", surname = '" + getSurname() + '\'' +
                 ", age = " + getAge() +
                 ", gender = " + getGender();

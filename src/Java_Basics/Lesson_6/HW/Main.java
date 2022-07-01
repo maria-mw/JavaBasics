@@ -3,7 +3,7 @@ package Java_Basics.Lesson_6.HW;
 public class Main {
     public static void main(String[] args) {
         // 1.Human. Client and Employee & 2.Interface
-        System.out.println("Tasks 1&2");
+        System.out.println("Tasks 1 & 2");
         Client client = new Client("Jhon", "Smith", "Unicredit Bank");
         BankEmployee bankEmployee = new BankEmployee("Fred", "Robertson", "Unicredit Bank");
 //        System.out.println(client.toString());
@@ -33,7 +33,7 @@ public class Main {
         System.out.println(bulldog.toString());
         bulldog.printLegs();
 
-        // 4.User.
+        // 4.User & Junior
         System.out.println("\nTask 5");
         User user = new User();
         user.newUser();
