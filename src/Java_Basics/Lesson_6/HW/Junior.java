@@ -4,6 +4,13 @@ public class Junior extends User {
     public Junior() {
     }
 
+    public void newJunior() {
+        setName("Jane");
+        setSurname("Dow");
+        setAge(25);
+        setGender(Gender.FEMALE);
+    }
+
     @Override
     public String getName() {
         return super.getName();
@@ -34,10 +41,6 @@ public class Junior extends User {
         return super.setAge();
     }
 
-    @Override
-    public String setName() {
-        return super.setName();
-    }
 
     @Override
     public String toString() {
@@ -51,5 +54,12 @@ public class Junior extends User {
     @Override
     public void addUser() {
         super.addUser();
+    }
+
+    @Override
+    public void getInfo() {
+        System.out.println("Enter name:");
+        setUserName(scanner.next());
+        System.out.println("Name is " + this.getName());
     }
 }

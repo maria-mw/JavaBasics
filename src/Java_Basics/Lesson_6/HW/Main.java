@@ -39,22 +39,26 @@ public class Main {
         user.newUser();
         System.out.println(user.getAge());
         System.out.println(user.toString());
+        user.getInfo();
+        System.out.println(user.toString());
         System.out.println("======================================================");
 
-        User user1 = User.createUser();
-        System.out.println(user1.getAge());
-        System.out.println(user1.toString());
-        System.out.println("======================================================");
-
-        User user2 = new User();
-        user2.addUser();
-        System.out.println(user2.getAge());
-        System.out.println(user2.toString());
-        System.out.println("======================================================");
+//        User user1 = User.createUser();
+//        System.out.println(user1.getAge());
+//        System.out.println(user1.toString());
+//        System.out.println("======================================================");
+//
+//        User user2 = new User();
+//        user2.addUser();
+//        System.out.println(user2.getAge());
+//        System.out.println(user2.toString());
+//        System.out.println("======================================================");
 
 
         Junior junior1 = new Junior();
-        junior1.addUser();
+        junior1.newJunior();
+        System.out.println(junior1.toString());
+        junior1.getInfo();
         System.out.println(junior1.toString());
         System.out.println("======================================================");
 

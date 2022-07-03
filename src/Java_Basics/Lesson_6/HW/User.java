@@ -8,6 +8,7 @@ public class User {
     private Integer age;
     private Enum gender;
 
+    Scanner scanner = new Scanner(System.in);
     private User(String name, String surname, Integer age, Enum gender) {
         this.name = name;
         this.surname = surname;
@@ -22,7 +23,7 @@ public class User {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -30,7 +31,7 @@ public class User {
         return surname;
     }
 
-    private void setSurname(String surname) {
+    public void setSurname(String surname) {
         this.surname = surname;
     }
 
@@ -38,7 +39,7 @@ public class User {
         return age;
     }
 
-    private void setAge(Integer age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -46,7 +47,7 @@ public class User {
         return gender;
     }
 
-    private void setGender(Enum gender) {
+    public void setGender(Enum gender) {
         this.gender = gender;
     }
 
@@ -58,7 +59,6 @@ public class User {
     }
 
     public Integer setAge() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter age:");
         int age = scanner.nextInt();
         if (age < 0 || age > 125) {
@@ -68,12 +68,8 @@ public class User {
         return age;
     }
 
-    public String setName() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter name:");
-        String name = scanner.nextLine();
-        scanner.nextLine();
-        return name;
+    public void setUserName(String name) {
+        setName(name);
     }
 
     public static User createUser() {
@@ -108,7 +104,6 @@ public class User {
     }
 
     public void addUser() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter name:");
         String name = scanner.nextLine();
         System.out.println("Please, enter surname:");
@@ -143,6 +138,11 @@ public class User {
 
     }
 
+    public void getInfo() {
+        System.out.println("Enter age:");
+        this.age = scanner.nextInt();
+        System.out.println("Age " + this.age);
+    }
     @Override
     public String toString() {
         return "User:" +
