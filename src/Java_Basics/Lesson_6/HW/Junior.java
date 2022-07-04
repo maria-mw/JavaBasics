@@ -37,10 +37,34 @@ public class Junior extends User {
     }
 
     @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public void setSurname(String surname) {
+        super.setSurname(surname);
+    }
+
+    @Override
+    public void setAge(Integer age) {
+        super.setAge(age);
+    }
+
+    @Override
+    public void setGender(Enum gender) {
+        super.setGender(gender);
+    }
+
+    @Override
     public Integer setAge() {
         return super.setAge();
     }
 
+    @Override
+    public void setUserName(String name) {
+        super.setUserName(name);
+    }
 
     @Override
     public String toString() {
