@@ -5,10 +5,10 @@ public class Plane {
     private Integer flightDistance;
     private Wing wing;
 
-    public Plane(String model, Integer flightDistance, Wing wing) {
+    public Plane(String model, Integer flightDistance, Integer wingWeight) {
         this.model = model;
         this.flightDistance = flightDistance;
-        this.wing = wing;
+        this.wing = new Wing(wingWeight);
     }
 
     public String getModel() {
@@ -45,5 +45,30 @@ public class Plane {
 
     String wingInfo () {
         return "Plane '" + getModel() + "'; " + wing.printWeight();
+    }
+
+    class Wing {
+        private Integer weight;
+
+        public Wing(Integer weight) {
+            this.weight = weight;
+        }
+
+        public Integer getWeight() {
+            return weight;
+        }
+
+        private void setWeight(Integer weight) {
+            this.weight = weight;
+        }
+
+        @Override
+        public String toString() {
+            return "weight = " + weight;
+        }
+
+        String printWeight() {
+            return ("Wing weight is " + this.weight + " kg");
+        }
     }
 }

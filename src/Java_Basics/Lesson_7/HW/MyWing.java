@@ -1,9 +1,9 @@
 package Java_Basics.Lesson_7.HW;
 
-public class Wing {
+public class MyWing {
     private Integer weight;
 
-    public Wing(Integer weight) {
+    public MyWing(Integer weight) {
         this.weight = weight;
     }
 

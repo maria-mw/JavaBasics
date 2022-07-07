@@ -27,16 +27,6 @@ public class Junior extends User {
     }
 
     @Override
-    public Enum getGender() {
-        return super.getGender();
-    }
-
-    @Override
-    public void newUser() {
-        super.newUser();
-    }
-
-    @Override
     public void setName(String name) {
         super.setName(name);
     }
@@ -57,14 +47,25 @@ public class Junior extends User {
     }
 
     @Override
+    public void setUserName(String name) {
+        super.setUserName(name);
+    }
+
+    @Override
+    public Enum getGender() {
+        return super.getGender();
+    }
+
+    @Override
+    public void newUser() {
+        super.newUser();
+    }
+
+    @Override
     public Integer setAge() {
         return super.setAge();
     }
 
-    @Override
-    public void setUserName(String name) {
-        super.setUserName(name);
-    }
 
     @Override
     public String toString() {
@@ -83,7 +84,7 @@ public class Junior extends User {
     @Override
     public void getInfo() {
         System.out.println("Enter name:");
-        setUserName(scanner.next());
+        setUserName(super.scanner.next());
         System.out.println("Name is " + this.getName());
     }
 }

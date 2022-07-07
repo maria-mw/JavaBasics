@@ -62,9 +62,7 @@ public class Main {
     }
 
     public static Set<Car> removeSimilarObjects(List<Car> carList) {
-        for (Car car : carList) {
-            carSet.add(car);
-        }
+        carSet.addAll(carList);
         System.out.println("CarSet size = " + carSet.size());
         int counter = 0;
         for (Car car : carSet) {
